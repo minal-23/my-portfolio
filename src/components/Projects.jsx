@@ -30,7 +30,7 @@ export default function Projects() {
       <Carousel.Item>
         <img
           className="d-block"
-          src="/facepay.png"
+          src={`${process.env.PUBLIC_URL}/facepay.png`}
           alt="First slide"
         />
         <Carousel.Caption>
@@ -52,7 +52,7 @@ export default function Projects() {
       <Carousel.Item>
         <img
           className="d-block"
-          src="/loanpayment.png"
+          src={`${process.env.PUBLIC_URL}/loanpayment.png`}
           alt="Second slide"
         />
         <Carousel.Caption>
@@ -73,7 +73,7 @@ export default function Projects() {
       <Carousel.Item>
         <img
           className="d-block"
-          src="/research.jpg"
+          src={`${process.env.PUBLIC_URL}/research.jpg`}
           alt="Third slide"
         />
         <Carousel.Caption>
