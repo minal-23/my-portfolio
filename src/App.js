@@ -1,23 +1,31 @@
-import logo from './logo.svg';
+import Experience from './components/Experience';
+import Header from './components/Header';
 import './App.css';
+import Projects from './components/Projects';
+import ParticleBackground from './components/ParticleBackground';
+import TypingText from './components/TypingText';
+import Connect from './components/Connect';
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+     
+      <ParticleBackground/>
+       <Header/>
+      <div className="App-header">
+        <div flexDirection="row" id="about">
+        <TypingText/>
+        <p className="summary">
+          I’m a software engineer from Bengaluru, India. I'm fascinated by large-scale, high-impact products  and contributed to major system upgrades and infrastructure migration in industry-leading services.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+         </div>
+        <Connect/>
+        <Experience/>
+      <Projects/>
+      <p style={{color:"#A9A9A9",fontSize:"15px"}}>Built and designed by Minal K</p>
+      <p style={{color:"#A9A9A9",fontSize:"15px"}}>All rights reserved. ©</p> 
+    </div>
     </div>
   );
 }

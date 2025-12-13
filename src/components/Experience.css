@@ -1,0 +1,105 @@
+
+.experience-wrapper {
+  display: flex;
+  width: 100%; /* full width */
+  min-height: 300px;
+  gap: 30px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  padding-left: 20px; /* small padding for alignment */
+  padding-right: 20px;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.experience-left {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  padding-right: 15px;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+
+}
+
+.experience-title {
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 15px;
+  transition: 0.2s;
+}
+
+.experience-title:hover {
+  color:  #00FFFF;
+}
+
+.experience-title.active {
+  color:  #00FFFF;
+  border-right: 4px solid  #00FFFF;
+  padding-left: 10px;
+}
+
+.experience-right {
+  flex: 1;
+  padding-left: 20px;
+  color:#A9A9A9;
+   font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+.experience-description {
+   flex: 1;
+  text-align: left;
+  line-height: 1.4;
+  font-size: 20px;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+.experience-designation,
+.experience-period {
+  text-align: left;  
+  margin: 0;          
+  padding: 0;       
+  font-weight: bold;
+  font-style: normal; 
+  color: #00FFFF;    
+  font-size: 20px; 
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+
+}
+.experience-period {
+  font-weight: normal;
+  font-style: italic;
+  color: gray;
+  margin-bottom: 10px;
+}
+.experience-header {
+  text-align: right;
+  margin: 0;
+  padding-left: 0; /* adjust if needed */
+  font-weight: normal;
+  font-size: 24px;
+  color: #00FFFF;
+}
+.experience-designation,
+.experience-period {
+  text-align: left;
+}
+.reveal {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: all 0.8s ease-out;
+}
+
+/* When element becomes visible */
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+.experience-point {
+  display: flex;
+  align-items: flex-start;   /* aligns icon with first text line */
+}
+
+.experience-icon {
+  color: #00FFFF;
+  margin-right: 10px;        /* fixed gap */
+  margin-top: 6px;           /* optional: vertical alignment tweak */
+  flex-shrink: 0;            /* prevents icon from shrinking */
+}
