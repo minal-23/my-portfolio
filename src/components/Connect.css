@@ -1,0 +1,27 @@
+
+.btn-wrapper
+{
+    display: flex; 
+    gap : 20px;
+    align-items: center;
+    padding:50px;
+}
+
+.email-btn,
+.linkedin-btn {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+
+
+.icon {
+  margin-right: 8px;
+}
+
+@media (max-width: 768px) {
+  .email-btn,
+  .linkedin-btn {
+    font-size: 12px;
+  }
+}
